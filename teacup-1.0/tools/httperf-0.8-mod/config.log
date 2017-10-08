@@ -1,0 +1,157 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:548: checking for gcc
+configure:661: checking whether the C compiler (gcc  ) works
+configure:677: gcc -o conftest   -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c  1>&5
+configure:703: checking whether the C compiler (gcc  ) is a cross-compiler
+configure:708: checking whether we are using GNU C
+configure:717: gcc -E conftest.c
+configure:736: checking whether gcc accepts -g
+configure:798: checking for a BSD compatible install
+configure:851: checking whether make sets ${MAKE}
+configure:880: checking for ranlib
+configure:908: checking how to run the C preprocessor
+configure:929: gcc -E  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE conftest.c >/dev/null 2>conftest.out
+configure:989: checking whether gcc needs -traditional
+configure:1062: checking host system type
+configure:1083: checking target system type
+configure:1101: checking build system type
+configure:1140: checking for main in -lm
+configure:1155: gcc -o conftest -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c -lm   1>&5
+configure:1183: checking for main in -lcrypto
+configure:1198: gcc -o conftest -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c -lcrypto  -lm  1>&5
+/usr/lib64/gcc/x86_64-suse-linux/4.7/../../../../x86_64-suse-linux/bin/ld: cannot find -lcrypto
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 1191 "configure"
+#include "confdefs.h"
+
+int main() {
+main()
+; return 0; }
+configure:1226: checking for SSL_version in -lssl
+configure:1245: gcc -o conftest -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c -lssl  -lm  1>&5
+/usr/lib64/gcc/x86_64-suse-linux/4.7/../../../../x86_64-suse-linux/bin/ld: cannot find -lssl
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 1234 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char SSL_version();
+
+int main() {
+SSL_version()
+; return 0; }
+configure:1275: checking for ANSI C header files
+configure:1288: gcc -E  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE conftest.c >/dev/null 2>conftest.out
+configure:1355: gcc -o conftest -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c -lm  1>&5
+configure: In function 'main':
+configure:1350:1: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+configure:1350:67: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+configure:1382: checking for fcntl.h
+configure:1392: gcc -E  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE conftest.c >/dev/null 2>conftest.out
+configure:1382: checking for sys/ioctl.h
+configure:1392: gcc -E  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE conftest.c >/dev/null 2>conftest.out
+configure:1382: checking for sys/time.h
+configure:1392: gcc -E  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE conftest.c >/dev/null 2>conftest.out
+configure:1382: checking for unistd.h
+configure:1392: gcc -E  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE conftest.c >/dev/null 2>conftest.out
+configure:1382: checking for openssl/ssl.h
+configure:1392: gcc -E  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE conftest.c >/dev/null 2>conftest.out
+configure:1388:25: fatal error: openssl/ssl.h: No such file or directory
+compilation terminated.
+configure: failed program was:
+#line 1387 "configure"
+#include "confdefs.h"
+#include <openssl/ssl.h>
+configure:1429: checking for working const
+configure:1483: gcc -c -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE conftest.c 1>&5
+configure: In function 'main':
+configure:1457:15: warning: unused variable 's' [-Wunused-variable]
+configure:1477:13: warning: unused variable 'foo' [-Wunused-variable]
+configure:1445:27: warning: unused variable 'zero' [-Wunused-variable]
+configure:1439:39: warning: unused variable 'x' [-Wunused-variable]
+configure:1459:8: warning: 't' is used uninitialized in this function [-Wuninitialized]
+configure:1474:21: warning: 'b' is used uninitialized in this function [-Wuninitialized]
+configure:1504: checking for size_t
+configure:1537: checking for long long type
+configure:1549: gcc -c -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE conftest.c 1>&5
+configure: In function 'main':
+configure:1545:20: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+configure:1545:31: warning: 'y' is used uninitialized in this function [-Wuninitialized]
+configure:1545:31: warning: 'z' is used uninitialized in this function [-Wuninitialized]
+configure:1575: checking whether time.h and sys/time.h may both be included
+configure:1589: gcc -c -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE conftest.c 1>&5
+configure: In function 'main':
+configure:1585:12: warning: unused variable 'tp' [-Wunused-variable]
+configure:1610: checking size of long
+configure:1629: gcc -o conftest -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c -lm  1>&5
+configure:1620:1: warning: return type defaults to 'int' [-Wreturn-type]
+configure: In function 'main':
+configure:1623:3: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+configure:1623:11: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+configure:1624:3: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long unsigned int' [-Wformat]
+configure:1649: checking for u_char
+configure:1682: checking for u_short
+configure:1715: checking for u_int
+configure:1748: checking for u_long
+configure:1784: checking for working alloca.h
+configure:1796: gcc -o conftest -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c -lm  1>&5
+configure: In function 'main':
+configure:1792:7: warning: unused variable 'p' [-Wunused-variable]
+configure:1817: checking for alloca
+configure:1850: gcc -o conftest -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c -lm  1>&5
+configure: In function 'main':
+configure:1846:7: warning: unused variable 'p' [-Wunused-variable]
+configure:2019: checking for unistd.h
+configure:2058: checking for getpagesize
+configure:2086: gcc -o conftest -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c -lm  1>&5
+configure:2111: checking for working mmap
+configure:2259: gcc -o conftest -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c -lm  1>&5
+configure:2190:7: warning: conflicting types for built-in function 'malloc' [enabled by default]
+configure: In function 'main':
+configure:2200:2: warning: implicit declaration of function 'getpagesize' [-Wimplicit-function-declaration]
+configure:2205:2: warning: call to function 'malloc' without a real prototype [-Wunprototyped-calls]
+configure:2190:7: note: 'malloc' was declared here
+configure:2207:3: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+configure:2207:3: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+configure:2209:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+configure:2210:2: warning: implicit declaration of function 'umask' [-Wimplicit-function-declaration]
+configure:2214:2: warning: implicit declaration of function 'write' [-Wimplicit-function-declaration]
+configure:2216:2: warning: implicit declaration of function 'close' [-Wimplicit-function-declaration]
+configure:2226:2: warning: call to function 'malloc' without a real prototype [-Wunprototyped-calls]
+configure:2190:7: note: 'malloc' was declared here
+configure:2229:24: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+configure:2244:2: warning: call to function 'malloc' without a real prototype [-Wunprototyped-calls]
+configure:2190:7: note: 'malloc' was declared here
+configure:2247:2: warning: implicit declaration of function 'read' [-Wimplicit-function-declaration]
+configure:2253:2: warning: implicit declaration of function 'unlink' [-Wimplicit-function-declaration]
+configure:2282: checking return type of signal handlers
+configure:2304: gcc -c -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE conftest.c 1>&5
+configure: In function 'main':
+configure:2300:5: warning: unused variable 'i' [-Wunused-variable]
+configure:2323: checking for vprintf
+configure:2351: gcc -o conftest -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c -lm  1>&5
+configure:2335:6: warning: conflicting types for built-in function 'vprintf' [enabled by default]
+configure:2431: checking for gettimeofday
+configure:2459: gcc -o conftest -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c -lm  1>&5
+configure:2431: checking for select
+configure:2459: gcc -o conftest -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c -lm  1>&5
+configure:2431: checking for socket
+configure:2459: gcc -o conftest -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c -lm  1>&5
+configure:2431: checking for strdup
+configure:2459: gcc -o conftest -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c -lm  1>&5
+configure:2443:6: warning: conflicting types for built-in function 'strdup' [enabled by default]
+configure:2431: checking for strerror
+configure:2459: gcc -o conftest -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c -lm  1>&5
+configure:2431: checking for strtod
+configure:2459: gcc -o conftest -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c -lm  1>&5
+configure:2431: checking for strtol
+configure:2459: gcc -o conftest -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c -lm  1>&5
+configure:2431: checking for strtoul
+configure:2459: gcc -o conftest -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c -lm  1>&5
+configure:2431: checking for getopt_long
+configure:2459: gcc -o conftest -g -O2 -Wall  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE  conftest.c -lm  1>&5
