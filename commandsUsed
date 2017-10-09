@@ -6,3 +6,6 @@ sudo docker images
 
 To remove dangling images :
 sudo docker rmi $(sudo docker images -f "dangling=true" -q)
+
+To rename docker images:
+sudo docker tag <image tag> <name>
