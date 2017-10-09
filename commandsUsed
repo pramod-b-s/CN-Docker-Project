@@ -1,0 +1,8 @@
+To build image : 
+sudo docker build --rm -t imageName .
+
+To show all images : 
+sudo docker images
+
+To remove dangling images :
+sudo docker rmi $(sudo docker images -f "dangling=true" -q)
