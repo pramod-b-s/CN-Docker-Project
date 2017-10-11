@@ -18,9 +18,9 @@ MKDIR = $(top_srcdir)/mkinstalldirs
 INSTALL = /usr/bin/install -c
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_DATA = ${INSTALL} -m 644
-
+INCLUDES = -I$(top_srcdir)
 # INCLUDES = -I$(top_srcdir)/include -I$(top_builddir) -I$(top_srcdir) -I$(top_srcdir)/lib
-INCLUDES = -I$(top_srcdir)/include -I$(top_builddir) -I$(top_srcdir) -I$(top_srcdir)/lib -I/usr/kerberos/include
+# INCLUDES = -I$(top_srcdir)/include -I$(top_builddir) -I$(top_srcdir) -I$(top_srcdir)/lib -I/usr/kerberos/include
 DEFS = -DHAVE_CONFIG_H -DUW_STABLE_STATS
 CPPFLAGS =  -DNDEBUG -D_GNU_SOURCE -D_XOPEN_SOURCE
 CFLAGS = -g -O2 -Wall
