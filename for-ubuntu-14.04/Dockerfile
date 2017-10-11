@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:14.04
 MAINTAINER pramod bs (prmdbs3@gmail.com)
 RUN echo Sit back and relax while this docker image takes care of TEACUP setup !
 run apt-get update && apt-get install -y python2.7
@@ -23,3 +23,4 @@ run pip install pexpect 3-1
 run wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.17-utopic/linux-headers-3.17.0-031700-generic_3.17.0-031700.201410060605_amd64.deb
 run wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.17-utopic/linux-headers-3.17.0-031700_3.17.0-031700.201410060605_all.deb
 run wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.17-utopic/linux-image-3.17.0-031700-generic_3.17.0-031700.201410060605_amd64.deb
+run dpkg -i linux-headers-3.17.0-*.deb linux-image-3.17.0-*.deb
