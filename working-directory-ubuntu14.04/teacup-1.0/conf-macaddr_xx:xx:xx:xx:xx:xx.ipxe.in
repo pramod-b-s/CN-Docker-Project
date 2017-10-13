@@ -1,2 +1,0 @@
-#!ipxe
-chain http://@TFTPSERVER@/grub.exe  --config-file="@CONFIG@"
