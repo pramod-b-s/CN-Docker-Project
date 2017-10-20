@@ -28,3 +28,6 @@ copy linux-3.17.4.tar.xz /usr/src
 run cd /usr/src/ && tar -xvf linux-3.17.4.tar.xz
 copy web10g-userland-2.0.9.tar.gz /usr/src/linux-3.17.4
 run cd /usr/src/linux-3.17.4 && tar -xvf web10g-userland-2.0.9.tar.gz && ls && cd web10g-userland-2.0.9 && ls && cd .. && patch -p1 < /usr/src/linux-3.17.4/web10g-userland-2.0.9/web10g-0.11-3.17.diff
+run dpkg -i *.deb
+run apt-get update
+run apt-cache showpkg linux-headers
