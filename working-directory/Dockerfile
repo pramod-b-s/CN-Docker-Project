@@ -31,4 +31,3 @@ run cd /usr/src/linux-3.17.4 && tar -xvf web10g-userland-2.0.9.tar.gz && ls && c
 run apt-get install -y software-properties-common python-software-properties
 run add-apt-repository ppa:kernel-ppa/ppa
 run apt-cache showpkg linux-headers
-run apt-cache showpkg linux-headers
