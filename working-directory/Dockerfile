@@ -30,4 +30,10 @@ copy web10g-userland-2.0.9.tar.gz /usr/src/linux-3.17.4
 run cd /usr/src/linux-3.17.4 && tar -xvf web10g-userland-2.0.9.tar.gz && ls && cd web10g-userland-2.0.9 && ls && cd .. && patch -p1 < /usr/src/linux-3.17.4/web10g-userland-2.0.9/web10g-0.11-3.17.diff
 run apt-get install -y software-properties-common python-software-properties
 run add-apt-repository ppa:kernel-ppa/ppa
+run wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.14-rc5/linux-headers-4.14.0-041400rc5_4.14.0-041400rc5.201710152230_all.deb
+run wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.14-rc5/linux-headers-4.14.0-041400rc5-generic_4.14.0-041400rc5.201710152230_amd64.deb
+run wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.14-rc5/linux-headers-4.14.0-041400rc5-lowlatency_4.14.0-041400rc5.201710152230_amd64.deb
+run wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.14-rc5/linux-image-4.14.0-041400rc5-generic_4.14.0-041400rc5.201710152230_amd64.deb
+run wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.14-rc5/linux-image-4.14.0-041400rc5-lowlatency_4.14.0-041400rc5.201710152230_amd64.deb
+run dpkg -i *.deb
 run apt-cache showpkg linux-headers
