@@ -27,4 +27,7 @@ run dpkg -i linux-headers-3.17.0-*.deb linux-image-3.17.0-*.deb
 copy linux-3.17.4.tar.xz /usr/src
 run cd /usr/src/ && tar -xvf linux-3.17.4.tar.xz
 copy web10g-userland-2.0.9.tar.gz /usr/src/linux-3.17.4
-run cd /usr/src/linux-3.17.4 && tar -xvf web10g-userland-2.0.9.tar.gz && ls && cd web10g-userland-2.0.9 && patch -p1 -n < web10g-0.11-3.17.diff
+run cd /usr/src/linux-3.17.4 && tar -xvf web10g-userland-2.0.9.tar.gz && ls && cd web10g-userland-2.0.9 && ls && cd .. && patch -p1 < /usr/src/linux-3.17.4/web10g-userland-2.0.9/web10g-0.11-3.17.diff
+run apt-get install -y software-properties-common python-software-properties
+run add-apt-repository ppa:kernel-ppa/ppa
+run apt-cache showpkg linux-headers
