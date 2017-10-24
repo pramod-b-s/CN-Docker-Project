@@ -9,3 +9,18 @@ sudo docker rmi $(sudo docker images -f "dangling=true" -q)
 
 To rename docker images:
 sudo docker tag <image tag> <name>
+
+MANUALLY RUN AND COMMIT TO IMAGE : 
+
+1) tar -xvzf httperf-0.8-mod.tar.gz
+cd httperf-0.8-mod/
+./configure
+
+Modify the make file as given below:
+INCLUDES = -I$(top_srcdir)/include -I$(top_builir) -I$ (top_srcdir) -I$
+(top_srcdir)/lib -I/usr/kerberos/include
+to 
+INCLUDES =-I$(top_srcdir)
+Again apply make :
+make
+make install
