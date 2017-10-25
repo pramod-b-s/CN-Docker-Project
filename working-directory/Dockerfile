@@ -24,6 +24,7 @@ run wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.17-utopic/linux-header
 run wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.17-utopic/linux-headers-3.17.0-031700_3.17.0-031700.201410060605_all.deb
 run wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.17-utopic/linux-image-3.17.0-031700-generic_3.17.0-031700.201410060605_amd64.deb
 run dpkg -i linux-headers-3.17.0-*.deb linux-image-3.17.0-*.deb
+run uname -sr
 run cd /usr/src && wget https://www.linux-mips.org/pub/linux/mips/kernel/v3.x/linux-3.17.4.tar.xz
 run cd /usr/src/ && tar -xvf linux-3.17.4.tar.xz
 run cd /usr/src/linux-3.17.4 && wget https://www.web10g.org/images/Software/Web10G_Kernel_Patch_and_API_Packages/web10g-userland-2.0.9.tar.gz
