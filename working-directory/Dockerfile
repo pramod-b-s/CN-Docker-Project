@@ -20,18 +20,10 @@ run cd teacup-1.0/tools/ && tar -xvzf nttcp-1.47-mod.tar.gz && cd nttcp-1.47-mod
 run apt-get install -y r-base
 run apt-get install -y pdfjam
 run pip install pexpect 3-1
-run wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.17-utopic/linux-headers-3.17.0-031700-generic_3.17.0-031700.201410060605_amd64.deb
-run wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.17-utopic/linux-headers-3.17.0-031700_3.17.0-031700.201410060605_all.deb
-run wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.17-utopic/linux-image-3.17.0-031700-generic_3.17.0-031700.201410060605_amd64.deb
-run dpkg -i linux-headers-3.17.0-*.deb linux-image-3.17.0-*.deb
-run uname -sr
 run cd /usr/src && wget https://www.linux-mips.org/pub/linux/mips/kernel/v3.x/linux-3.17.4.tar.xz
 run cd /usr/src/ && tar -xvf linux-3.17.4.tar.xz
 run cd /usr/src/linux-3.17.4 && wget https://www.web10g.org/images/Software/Web10G_Kernel_Patch_and_API_Packages/web10g-userland-2.0.9.tar.gz
 run cd /usr/src/linux-3.17.4 && tar -xvf web10g-userland-2.0.9.tar.gz && ls && cd web10g-userland-2.0.9 && ls && cd .. && patch -p1 < /usr/src/linux-3.17.4/web10g-userland-2.0.9/web10g-0.11-3.17.diff
 run apt-get update && apt-get install -y software-properties-common python-software-properties
-run wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.17-rc1-utopic/linux-headers-3.17.0-031700rc1-generic_3.17.0-031700rc1.201409021903_amd64.deb
-run wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.17-rc1-utopic/linux-headers-3.17.0-031700rc1_3.17.0-031700rc1.201409021903_all.deb
-run wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.17-rc1-utopic/linux-image-3.17.0-031700rc1-generic_3.17.0-031700rc1.201409021903_amd64.deb
 run add-apt-repository ppa:kernel-ppa/ppa
 run apt-cache showpkg linux-headers
