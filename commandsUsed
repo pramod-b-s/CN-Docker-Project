@@ -10,6 +10,10 @@ sudo docker rmi $(sudo docker images -f "dangling=true" -q)
 To rename docker images:
 sudo docker tag <image tag> <name>
 
+To save the docker container:
+docker save -o </path/name.tar> container_name 
+docker save -o teacup.tar my_project
+
 MANUALLY RUN AND COMMIT TO IMAGE : 
 
 1) tar -xvzf httperf-0.8-mod.tar.gz
