@@ -1,4 +1,4 @@
-# Script to install Linux 3.17 kernel on 64 bit Ubuntu system 
+# Script to install Linux 3.17 kernel on 32 bit Ubuntu system 
 
 #!/bin/bash
 sudo wget http://kernel.ubuntu.com/~kernel-
