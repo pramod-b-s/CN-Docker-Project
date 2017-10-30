@@ -14,6 +14,9 @@ To save the docker container:
 docker save -o </path/name.tar> container_name 
 docker save -o teacup.tar my_project
 
+To load from exiting .tar docker container:
+docker load -i teacup.tar
+
 MANUALLY RUN AND COMMIT TO IMAGE : 
 
 1) tar -xvzf httperf-0.8-mod.tar.gz
