@@ -24,6 +24,3 @@ run cd /usr/src && wget https://www.linux-mips.org/pub/linux/mips/kernel/v3.x/li
 run cd /usr/src/ && tar -xvf linux-3.17.4.tar.xz
 run cd /usr/src/linux-3.17.4 && wget https://www.web10g.org/images/Software/Web10G_Kernel_Patch_and_API_Packages/web10g-userland-2.0.9.tar.gz
 run cd /usr/src/linux-3.17.4 && tar -xvf web10g-userland-2.0.9.tar.gz && ls && cd web10g-userland-2.0.9 && ls && cd .. && patch -p1 < /usr/src/linux-3.17.4/web10g-userland-2.0.9/web10g-0.11-3.17.diff
-run apt-get update && apt-get install -y software-properties-common python-software-properties
-run add-apt-repository ppa:kernel-ppa/ppa
-run apt-cache showpkg linux-headers
