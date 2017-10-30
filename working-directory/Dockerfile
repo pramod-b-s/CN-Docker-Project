@@ -27,3 +27,4 @@ run cd /usr/src/linux-3.17.4 && tar -xvf web10g-userland-2.0.9.tar.gz && ls && c
 run sudo cp /boot/config-3.17.4-28-generic /usr/src/linux-3.17.4
 run sudo make oldconfig
 run sudo make menuconfig
+run apt-get install ncurses-dev
