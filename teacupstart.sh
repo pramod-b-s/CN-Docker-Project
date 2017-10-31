@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo mkdir /home/($whoami)/Documents/TEACUP
 sudo cd /home/($whoami)/Documents/TEACUP
 sudo wget http://caia.swin.edu.au/tools/teacup/downloads/teacup-public-1.0.tar.gz

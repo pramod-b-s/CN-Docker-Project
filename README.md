@@ -9,6 +9,8 @@ However, setting up this framework is a tedious job and takes away several month
 At NITK, this framework has been set up successfully. This project aims to use the docker technology to simplify the 
 setting of TEACUP in future.
 
+TEACUP is used to automate many aspects of running TCP performance experiments in our specially-constructed physical testbed. TEACUP enables repeatable testing of different TCP algorithms over a range of emulated network path conditions, bottleneck rate limits and bottleneck queuing disciplines.We hope TEACUP proves useful to other researchers who already have (or are interested in setting up) similar network testbeds.
+
 ### Instructions for TEACUP setup using Docker container
 1. Make sure you are running Ubuntu 14.04.
 2. Before running any of the scripts mentioned henceforth;
@@ -22,6 +24,7 @@ setting of TEACUP in future.
 6. Install Docker by running the installdocker.sh script.
 7. Load the Docker image using the command <code>sudo docker load -i teacup.tar</code>
 8. Run the container using the command <code>sudo docker run -it teacup</code>
+9. Run teacupstart.sh to open the teacup files.
 
 ### References
 + http://caia.swin.edu.au/tools/teacup/

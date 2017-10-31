@@ -1,6 +1,9 @@
 To build image : 
 sudo docker build --rm -t imageName .
 
+To show all the running containers:
+sudo docker ps -a
+
 To show all images : 
 sudo docker images
 
@@ -31,3 +34,15 @@ INCLUDES =-I$(top_srcdir)
 Again apply make :
 make
 make install
+
+
+Script commands used:
+
+Making shell scripts executable:
+chmod 755 <file.sh>
+
+To replace statements inside files.
+sed -i 's/<what to replace>/<replace by what>' <path to the file>
+
+To install online packages through commandline.
+wget <link>
