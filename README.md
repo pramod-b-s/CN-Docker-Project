@@ -12,8 +12,8 @@ setting of TEACUP in future.
 ### Instructions for TEACUP setup using Docker container
 1. Make sure you are running Ubuntu 14.04.
 2. Before running any of the scripts mentioned henceforth;
-  Make the appropriate script executable by using the command <code>chmod +x scriptName.sh<code>
-  Run the script using the command <code>./scriptName.sh<code>
+Make the appropriate script executable by using the command chmod +x scriptName.sh</code>
+Run the script using the command <code>./scriptName.sh</code>
 3. Depending on whether your OS type is 32-bit or 64-bit, run install32.sh or install64.sh scripts respectively.
 4. Boot with Linux 3.17 kernel by going to "Advanced options for Ubuntu" before system startup after restart. 
 5. Make other changes to your kernel by running the installteacup.sh script. 
