@@ -5,10 +5,10 @@ RUN apt-get update && apt-get install -y python2.7
 RUN apt-get install -y python-pip
 RUN pip install --upgrade pip
 RUN pip install fabric
+RUN apt-get update
 RUN apt-get install -y wget
 RUN wget http://caia.swin.edu.au/tools/spp/downloads/spp-0.3.6.tar.gz
 RUN tar -xvzf spp-0.3.6.tar.gz
-RUN ls
 RUN apt-get install -y libpcap0.8-dev
 RUN cd spp-0.3.6 && make
 RUN wget http://caia.swin.edu.au/tools/teacup/downloads/teacup-public-1.0.tar.gz
