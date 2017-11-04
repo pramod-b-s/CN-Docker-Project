@@ -24,8 +24,10 @@ TEACUP is used to automate many aspects of running TCP performance experiments i
 6. Install Docker by running the installdocker.sh script.
 7. Load the Docker image using the command <code>sudo docker load -i teacup.tar</code>
 8. Run the container using the command <code>sudo docker run -it teacup</code>
-9. Run teacupstart.sh to open the teacup files.
+9. Before running teacupstart.sh add path to configuration files in the commands. Also add env.username and env.password at <username> and <password> fields.
+10. Run teacupstart.sh to open the teacup files.
 
 ### References
 + http://caia.swin.edu.au/tools/teacup/
 + https://docs.docker.com/get-started/
++ https://www.web10g.org

@@ -9,17 +9,11 @@ sudo sed -i 's/APT::Periodic::Update-Package-Lists “1”/APT::Periodic::Update
 
 # server side
 
-# sudo update-rc.d -f ntpdate remove sudo apt-get install ntp
-# sudo gedit /etc/ntp.conf
+sudo update-rc.d -f ntpdate remove sudo apt-get install ntp
+sudo gedit /etc/ntp.conf
+
 # comment all pool servers and edit:
-# server 192.168.50.1 this should be the ip address of your-server: save and exit
-# sudo service ntp restart
 
-# client side
+# server 192.168.50.1 this should be the ip address of your-server:
+sudo service ntp restart
 
-# sudo apt-get install ntp
-# sudo gedit /etc/ntp.conf :
-# server 192.168.50.1:
-# sudo service ntp restart
-# Turn off firewall :
-# sudo ufw disable
