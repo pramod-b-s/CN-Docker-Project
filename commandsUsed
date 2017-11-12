@@ -1,3 +1,6 @@
+To download teacup-code folder:
+hg clone http://hg.code.sf.net/p/teacup/code teacup-code
+
 To build image : 
 sudo docker build --rm -t imageName .
 
