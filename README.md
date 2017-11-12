@@ -26,8 +26,21 @@ TEACUP is used to automate many aspects of running TCP performance experiments i
 8. Run the container using the command <code>sudo docker run -it teacup</code>
 9. Before running teacupstart.sh add path to configuration files in the commands. Also add env.username and env.password at <username> and <password> fields.
 10. Run teacupstart.sh to open the teacup files.
+11. Run ttprobe.sh inside your teacup-code/tools folder to apple the ttprobe patch to the kernel.
+10. Create experiment folder in TEACUP directory containing the teacup-code folder.This will contain the configuration for teacup testbed.
+11. Run 
+-teacup-code/example_configs/config-scenario1.py /experiment/config.py
+-cp teacup-1.0/example_configs/run.sh /experiment/
+-cp teacup-1.0/fabfile.py /experiment/
+12. Add to config.py file in experiment folder
+-TPCONF_linux_tcp_logger = 'ttprobe'
+-TPCONF_ttprobe_direction = 'io'
+-TPCONF_ttprobe_output_mode = 'o'
+13. Add env.user and env.password and also specify the teacup-code path in TPCONF_script_path.
+14. Run ./run.sh in experiment folder to generate the required log files.
 
 ### References
 + http://caia.swin.edu.au/tools/teacup/
 + http://hg.code.sf.net/p/teacup/code
 + https://docs.docker.com/get-started/
++ http://caia.swin.edu.au/reports/150911A/CAIA-TR-150911A.pdf
