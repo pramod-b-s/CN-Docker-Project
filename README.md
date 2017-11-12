@@ -11,8 +11,8 @@ setting of TEACUP in future.
 
 TEACUP is used to automate many aspects of running TCP performance experiments in our specially-constructed physical testbed. TEACUP enables repeatable testing of different TCP algorithms over a range of emulated network path conditions, bottleneck rate limits and bottleneck queuing disciplines.We hope TEACUP proves useful to other researchers who already have (or are interested in setting up) similar network testbeds.
 
-### Instructions for TEACUP setup using Docker container
-1. Make sure you are running Ubuntu 14.04.
+### Instructions for TEACUP testbed setup
+1. Make sure you are running Ubuntu.
 2. Before running any of the scripts mentioned henceforth;
   - Make the appropriate script executable by using the command 
     <code>chmod +x scriptName.sh</code>
@@ -38,6 +38,18 @@ TEACUP is used to automate many aspects of running TCP performance experiments i
   - TPCONF_ttprobe_output_mode = 'o'
 13. Add env.user and env.password and also specify the teacup-code path in TPCONF_script_path.
 14. Run ./run.sh in experiment folder to generate the required log files.
+  
+### Instructions for TEACUP testbed setup using Docker containers
+1. Make sure you are running Ubuntu.
+2. Before running any of the scripts mentioned henceforth;
+  - Make the appropriate script executable by using the command 
+    <code>chmod +x scriptName.sh</code>
+  - Run the script using the command 
+    <code>./scriptName.sh</code>
+3. Install Docker by running the installdocker.sh script.
+4. Load the Docker images for server, client and router using the command <code>sudo docker load -i teacup.tar</code> on the respective machines.
+5. Run the containers for server, client and router using the command <code>sudo docker run -it teacup</code> on the respective machines.
+6. Navigate to /home/TEACUP/experiment and run TEACUP using command <code>./run.sh</code> on the server's docker container to generate the required log files.
 
 ### References
 + http://caia.swin.edu.au/tools/teacup/
