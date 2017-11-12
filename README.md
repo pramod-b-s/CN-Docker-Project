@@ -29,13 +29,13 @@ TEACUP is used to automate many aspects of running TCP performance experiments i
 11. Run ttprobe.sh inside your teacup-code/tools folder to apple the ttprobe patch to the kernel.
 10. Create experiment folder in TEACUP directory containing the teacup-code folder.This will contain the configuration for teacup testbed.
 11. Run 
--teacup-code/example_configs/config-scenario1.py /experiment/config.py
--cp teacup-1.0/example_configs/run.sh /experiment/
--cp teacup-1.0/fabfile.py /experiment/
+  -teacup-code/example_configs/config-scenario1.py /experiment/config.py
+  -cp teacup-1.0/example_configs/run.sh /experiment/
+  -cp teacup-1.0/fabfile.py /experiment/
 12. Add to config.py file in experiment folder
--TPCONF_linux_tcp_logger = 'ttprobe'
--TPCONF_ttprobe_direction = 'io'
--TPCONF_ttprobe_output_mode = 'o'
+  -TPCONF_linux_tcp_logger = 'ttprobe'
+  -TPCONF_ttprobe_direction = 'io'
+  -TPCONF_ttprobe_output_mode = 'o'
 13. Add env.user and env.password and also specify the teacup-code path in TPCONF_script_path.
 14. Run ./run.sh in experiment folder to generate the required log files.
 
